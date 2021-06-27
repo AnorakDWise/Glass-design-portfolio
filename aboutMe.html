@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">  
+
+    <!--Nunito font from Google fonts:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Home screen</title>
+  </head>
+  <body id="aboutMe">
+    <nav class="nav-container">
+      <img src="./assets/pics/Gregy.webp" />
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li id="selected"><a href="aboutMe.html">About me</a></li>
+        <li><a href="#">My work</a></li>
+        <li><a href="#">Contact me</a></li>
+      </ul>
+    </nav>
+
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll("nav img"), {
+        max: 25,
+        speed: 5000,
+      });
+    </script>
+  </body>
+</html>

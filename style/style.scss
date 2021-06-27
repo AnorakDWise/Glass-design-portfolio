@@ -23,7 +23,6 @@ $blk-drk: #292929;
 }
 
 body {
-  background-image: url("../assets/pics/Background\ \(beta\).svg");
   background-size: cover;
   font-family: $nunito;
   color: black;
@@ -242,4 +241,12 @@ body {
       filter: drop-shadow(0px 5px 10px $pastel-red);
     }
   }
+}
+
+#index {
+  background-image: url("../assets/pics/index\ background\ \(beta\).svg");
+}
+
+#aboutMe {
+  background-image: url("../assets/pics/aboutMe\ background\ \(beta\).svg");
 }
