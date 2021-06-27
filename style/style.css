@@ -1,0 +1,74 @@
+body {
+  background-image: url("../assets/pics/Background (full res).svg");
+  background-size: cover;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 3vh;
+}
+
+body .container {
+  margin: auto;
+  width: 1500px;
+}
+
+body .nav-container {
+  margin: auto;
+  width: 1400px;
+}
+
+body .intro {
+  top: 55px;
+  position: absolute;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+body .intro nav {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-filter: drop-shadow(0px 0px 15px black);
+          filter: drop-shadow(0px 0px 15px black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1400px;
+  height: 90px;
+  border-radius: 25px;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 20px;
+}
+
+body .intro nav img {
+  width: 60px;
+  margin: 0px 50px;
+  border-radius: 50%;
+}
+
+body .intro nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body .intro nav ul li {
+  margin: 0px 50px;
+  font-weight: 700;
+}
+
+body .intro nav ul li a {
+  color: #5e1d1d;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
