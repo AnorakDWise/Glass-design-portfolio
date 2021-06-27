@@ -34,6 +34,18 @@ body {
     font-size: 4.5vh;
   }
 
+  #black {
+    font-weight: $lte;
+    color: $pastel-blk;
+    filter: drop-shadow(0px 5px 10px $pastel-blk);
+  }
+
+  #aboutMeTitle {
+    margin-top: 40px;
+    filter: drop-shadow(0px 5px 10px $pastel-red);
+    font-weight: $bld;
+  }
+
   #pastel-red {
     color: $pastel-red;
   }
@@ -240,6 +252,68 @@ body {
       font-weight: $lte;
       filter: drop-shadow(0px 5px 10px $pastel-red);
     }
+  }
+
+  .Me {
+    left: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    top: 70px;
+    @include glass-frosted;
+    border-radius: 40px;
+
+    h1 {
+      margin: 0px 40px;
+      padding-top: 30px;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 30px;
+
+      img {
+        width: 500px;
+        filter: drop-shadow(0px 5px 10px $red-drk);
+      }
+
+      p {
+        width: 500px;
+        color: $dflt;
+        font-weight: $reg;
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+
+        #bold {
+          color: $pastel-ylw;
+          filter: drop-shadow(0px 5px 10px $pastel-ylw);
+        }
+
+        a {
+          padding: 5px 20px;
+          background-color: $pastel-red;
+          filter: drop-shadow(0px 5px 10px $red-drk);
+          text-decoration: none;
+          color: $pastel-blk;
+          font-weight: $bld;
+          border-radius: 30px;
+          transition: 0.25s;
+
+          &:hover {
+            background-color: $red-drk;
+            transition: 0.25s;
+          }
+        }
+      }
+    }
+  }
+
+  .language-graphs {
+    @include glass-frosted;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 40px;
   }
 }
 

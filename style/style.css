@@ -11,6 +11,20 @@ body h1 {
   font-size: 4.5vh;
 }
 
+body #black {
+  font-weight: 300;
+  color: #383838;
+  -webkit-filter: drop-shadow(0px 5px 10px #383838);
+          filter: drop-shadow(0px 5px 10px #383838);
+}
+
+body #aboutMeTitle {
+  margin-top: 40px;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+  font-weight: 700;
+}
+
 body #pastel-red {
   color: #ff4d4d;
 }
@@ -270,6 +284,87 @@ body footer p {
   font-weight: 300;
   -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
           filter: drop-shadow(0px 5px 10px #ff4d4d);
+}
+
+body .Me {
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  top: 70px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-filter: drop-shadow(0px 0px 15px #505050);
+          filter: drop-shadow(0px 0px 15px #505050);
+  border-radius: 40px;
+}
+
+body .Me h1 {
+  margin: 0px 40px;
+  padding-top: 30px;
+}
+
+body .Me .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+body .Me .about-me img {
+  width: 500px;
+  -webkit-filter: drop-shadow(0px 5px 10px #c93d3d);
+          filter: drop-shadow(0px 5px 10px #c93d3d);
+}
+
+body .Me .about-me p {
+  width: 500px;
+  color: #923030;
+  font-weight: 400;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+}
+
+body .Me .about-me p #bold {
+  color: #f7ff8d;
+  -webkit-filter: drop-shadow(0px 5px 10px #f7ff8d);
+          filter: drop-shadow(0px 5px 10px #f7ff8d);
+}
+
+body .Me .about-me p a {
+  padding: 5px 20px;
+  background-color: #ff4d4d;
+  -webkit-filter: drop-shadow(0px 5px 10px #c93d3d);
+          filter: drop-shadow(0px 5px 10px #c93d3d);
+  text-decoration: none;
+  color: #383838;
+  font-weight: 700;
+  border-radius: 30px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+body .Me .about-me p a:hover {
+  background-color: #c93d3d;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+body .language-graphs {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-filter: drop-shadow(0px 0px 15px #505050);
+          filter: drop-shadow(0px 0px 15px #505050);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-radius: 40px;
 }
 
 #index {
