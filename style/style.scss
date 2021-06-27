@@ -2,23 +2,50 @@ $nunito: "Nunito", sans-serif;
 $lte: 300;
 $reg: 400;
 $bld: 700;
+$dflt: #923030;
 $pastel-red: #ff4d4d;
-$red-drk: #923030;
+$red-drk: #c93d3d;
 $pastel-ylw: #f7ff8d;
+$ylw-drk: #c9cf76;
 $pastel-blk: #383838;
+$blk-drk: #292929;
 
-@mixin glass {
+@mixin glass-frosted {
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  filter: drop-shadow(0px 0px 15px black);
+  backdrop-filter: blur(50px);
+  filter: drop-shadow(0px 0px 15px rgb(80, 80, 80));
+}
+
+@mixin glass-light {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  filter: drop-shadow(0px 0px 15px rgb(80, 80, 80));
 }
 
 body {
-  background-image: url("../assets/pics/Background\ \(full\ res\).svg");
+  background-image: url("../assets/pics/Background\ \(beta\).svg");
   background-size: cover;
   font-family: $nunito;
   color: black;
   font-size: 3vh;
+
+  h1 {
+    font-weight: $reg;
+    color: $dflt;
+    font-size: 4.5vh;
+  }
+
+  #pastel-red {
+    color: $pastel-red;
+  }
+
+  #bold {
+    font-weight: $bld;
+  }
+
+  #light {
+    font-weight: $lte;
+  }
 
   .container {
     margin: auto;
@@ -31,7 +58,7 @@ body {
   }
 
   nav {
-    @include glass;
+    @include glass-light;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,26 +87,159 @@ body {
         a {
           color: $red-drk;
           text-decoration: none;
+          transition: 0.25s;
+
+          &:hover {
+            color: $dflt;
+            transition: 0.25s;
+          }
         }
       }
 
       #selected {
-        background-color: $pastel-blk;
-        padding: 5px 20px;
-        border-radius: 30px;
-        filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+        a {
+          background-color: $pastel-blk;
+          color: $pastel-ylw;
+          transition: 0.25s;
+          padding: 5px 20px;
+          border-radius: 30px;
+          filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+
+          &:hover {
+            background-color: $blk-drk;
+            color: $ylw-drk;
+            transition: 0.25s;
+          }
+        }
       }
     }
   }
 
   .intro {
     z-index: -1;
-    @include glass;
+    @include glass-frosted;
     top: 70px;
     position: absolute;
-    height: 700px;
     left: 0;
     right: 0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .hello {
+      a {
+        margin: 20px 20px;
+        color: $pastel-blk;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 30px;
+        font-size: 3vh;
+        font-weight: $bld;
+      }
+
+      .Hire-me {
+        margin-left: 0px;
+        background-color: $pastel-red;
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+        transition: 0.25s;
+
+        &:hover {
+          background-color: $red-drk;
+          transition: 0.25s;
+        }
+      }
+
+      .More {
+        margin-right: 0px;
+        background-color: $pastel-ylw;
+        filter: drop-shadow(0px 5px 10px $pastel-ylw);
+        transition: 0.25s;
+
+        &:hover {
+          background-color: $ylw-drk;
+          transition: 0.25s;
+        }
+      }
+    }
+
+    img {
+      margin: 20px 0px;
+      height: 600px;
+      width: 600px;
+      filter: drop-shadow(0px 0px 25px rgba(0, 0, 0, 0.1));
+    }
+
+    h1 {
+      #bold {
+        color: $pastel-ylw;
+        filter: drop-shadow(0px 5px 10px $pastel-ylw);
+      }
+
+      #light {
+        filter: drop-shadow(0px 5px 10px $pastel-blk);
+        color: $pastel-blk;
+      }
+
+      #pastel-red {
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+        color: $dflt;
+      }
+    }
+  }
+
+  .social-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 580px;
+
+    a {
+      .icon {
+        border-radius: 25px;
+        width: 64px;
+        height: 64px;
+        background-color: $pastel-red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.25s;
+        margin: 0px 70px;
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+
+        &:hover {
+          background-color: $pastel-ylw;
+          transition: 0.25s;
+          filter: drop-shadow(0px 5px 10px $pastel-ylw);
+        }
+
+        img {
+          width: 45px;
+        }
+      }
+    }
+  }
+
+  footer {
     border-radius: 30px;
+    @include glass-light;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+
+    p {
+      color: $dflt;
+      text-align: center;
+      font-size: 2vh;
+      font-weight: $lte;
+      filter: drop-shadow(0px 5px 10px $pastel-red);
+    }
   }
 }
