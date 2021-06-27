@@ -16,16 +16,7 @@ body .nav-container {
   width: 1400px;
 }
 
-body .intro {
-  top: 55px;
-  position: absolute;
-  height: 700px;
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-}
-
-body .intro nav {
+body nav {
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -49,26 +40,49 @@ body .intro nav {
   top: 20px;
 }
 
-body .intro nav img {
+body nav img {
   width: 60px;
   margin: 0px 50px;
   border-radius: 50%;
 }
 
-body .intro nav ul {
+body nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-body .intro nav ul li {
+body nav ul li {
   margin: 0px 50px;
   font-weight: 700;
 }
 
-body .intro nav ul li a {
-  color: #5e1d1d;
+body nav ul li a {
+  color: #923030;
   text-decoration: none;
+}
+
+body nav ul #selected {
+  background-color: #383838;
+  padding: 5px 20px;
+  border-radius: 30px;
+  -webkit-filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+body .intro {
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-filter: drop-shadow(0px 0px 15px black);
+          filter: drop-shadow(0px 0px 15px black);
+  top: 70px;
+  position: absolute;
+  height: 700px;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */
