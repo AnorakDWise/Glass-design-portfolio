@@ -233,25 +233,21 @@ body {
   }
 
   footer {
-    border-radius: 30px;
-    @include glass-light;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 500px;
-    margin: auto;
+
 
     p {
+      position: absolute;
+      bottom: 30px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
       color: $dflt;
-      text-align: center;
       font-size: 2vh;
       font-weight: $lte;
-      filter: drop-shadow(0px 5px 10px $pastel-red);
+      filter: drop-shadow(0px 5px 5px $pastel-red);
     }
   }
 
@@ -273,7 +269,6 @@ body {
 
       img {
         width: 500px;
-        filter: drop-shadow(0px 5px 10px $red-drk);
       }
 
       p {
@@ -309,9 +304,8 @@ body {
   .language-graphs {
     display: flex;
     flex-direction: column;
-
     @include glass-frosted;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     border-radius: 40px;
 
     .graphsText {
@@ -358,6 +352,69 @@ body {
       }
     }
   }
+
+  .personalTitle {
+    @include glass-frosted();
+    border-radius: 40px;
+    margin-bottom: 15px;
+
+    .personalH1 {
+      padding: 30px 40px;
+      
+      h1 {
+        font-weight: $bld;
+        margin: 0;
+        text-align: center;
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+
+        #black {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .hobbies {
+    display: flex;
+    justify-content: space-between;
+
+    .hobbyCard {
+      width: 410px;
+      border-radius: 40px;
+      @include glass-frosted();
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 40px;
+      margin-bottom: 30px;
+
+      h1 {
+        font-weight: $bld;
+        color: $pastel-ylw;
+        filter: drop-shadow(0px 5px 10px $pastel-ylw);
+      }
+
+      img {
+        width: 400px;
+      }
+
+      p {
+        color: $dflt;
+        font-weight: $reg;
+        filter: drop-shadow(0px 5px 10px $pastel-red);
+
+        #bold {
+          color: $pastel-ylw;
+          filter: drop-shadow(0px 5px 10px $pastel-ylw);
+        }
+
+        #black {
+          font-weight: $lte;
+        }
+      }
+    }
+  }
 }
 
 #index {
@@ -366,4 +423,19 @@ body {
 
 #aboutMe {
   background-image: url("../assets/pics/aboutMe\ background\ \(beta\).svg");
+
+  footer {
+    clear: both;
+    display: unset;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      margin: auto;
+      position: unset;
+      margin-bottom: 20px;
+      width: max-content;
+    }
+  }
 }
