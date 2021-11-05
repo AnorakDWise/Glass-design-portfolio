@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="339" viewBox="0 0 1000 339">
+  <defs>
+    <filter id="Rectangle_1" x="151" y="-10" width="37" height="330" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#383838"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_100_" x="76" y="-10" width="85" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_75_" x="76" y="58" width="73" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_50_" x="76" y="127" width="73" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-4"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_25_" x="76" y="195" width="73" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-5"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_0_" x="76" y="263" width="61" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-6"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_2" x="341" y="17" width="41" height="290" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-7"/>
+      <feFlood flood-color="#f7ff8d"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="English" x="305" y="290" width="100" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-8"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3" x="504" y="37" width="41" height="270" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-9"/>
+      <feFlood flood-color="#f7ff8d"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="French" x="479" y="290" width="94" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-10"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_4" x="667" y="3" width="41" height="304" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-11"/>
+      <feFlood flood-color="#f7ff8d"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Czech" x="653" y="290" width="86" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-12"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_5" x="851" y="208" width="41" height="99" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-13"/>
+      <feFlood flood-color="#f7ff8d"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Spanish" x="820" y="290" width="104" height="57" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-14"/>
+      <feFlood flood-color="#ff4d4d"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-language_graphs">
+      <rect width="1000" height="339"/>
+    </clipPath>
+  </defs>
+  <g id="language_graphs" data-name="language graphs" clip-path="url(#clip-language_graphs)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="7" height="300" rx="3.5" transform="translate(166)" fill="#383838"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_100_)">
+      <text id="_100_2" data-name="100%" transform="translate(91 20)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">100%</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_75_)">
+      <text id="_75_2" data-name="75%" transform="translate(91 88)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">75%</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_50_)">
+      <text id="_50_2" data-name="50%" transform="translate(91 157)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">50%</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_25_)">
+      <text id="_25_2" data-name="25%" transform="translate(91 225)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">25%</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_0_)">
+      <text id="_0_2" data-name="0%" transform="translate(91 293)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">0%</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_2)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" width="11" height="260" rx="5.5" transform="translate(356 27)" fill="#f7ff8d"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#English)">
+      <text id="English-2" data-name="English" transform="translate(355 320)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-34.33" y="0">English</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_3)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" width="11" height="240" rx="5.5" transform="translate(519 47)" fill="#f7ff8d"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#French)">
+      <text id="French-2" data-name="French" transform="translate(526 320)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-31.2" y="0">French</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_4)">
+      <rect id="Rectangle_4-2" data-name="Rectangle 4" width="11" height="274" rx="5.5" transform="translate(682 13)" fill="#f7ff8d"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Czech)">
+      <text id="Czech-2" data-name="Czech" transform="translate(696 320)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-27.25" y="0">Czech</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_5)">
+      <rect id="Rectangle_5-2" data-name="Rectangle 5" width="11" height="69" rx="5.5" transform="translate(866 218)" fill="#f7ff8d"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Spanish)">
+      <text id="Spanish-2" data-name="Spanish" transform="translate(872 320)" fill="#923030" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-36.91" y="0">Spanish</tspan></text>
+    </g>
+  </g>
+</svg>

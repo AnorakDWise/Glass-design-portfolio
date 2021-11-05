@@ -1,5 +1,6 @@
 body {
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Nunito", sans-serif;
   color: black;
   font-size: 3vh;
@@ -353,6 +354,13 @@ body .Me .about-me p a:hover {
 }
 
 body .language-graphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -362,9 +370,56 @@ body .language-graphs {
   border-radius: 40px;
 }
 
-body .language-graphs h1 {
-  padding-top: 30px;
-  margin: 60px 40px 0px 40px;
+body .language-graphs .graphsText {
+  padding: 30px 40px;
+}
+
+body .language-graphs .graphsText .graphsTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+
+body .language-graphs .graphsText .graphsTitle h1 {
+  margin: 0;
+  padding: 0px;
+  padding-right: 15px;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+}
+
+body .language-graphs .graphsText .graphsTitle img {
+  width: 60px;
+  -webkit-filter: drop-shadow(0px 5px 20px #ff4d4d);
+          filter: drop-shadow(0px 5px 20px #ff4d4d);
+}
+
+body .language-graphs .graphsText p {
+  color: #923030;
+  font-weight: 400;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+  margin: 0;
+}
+
+body .language-graphs .graphsText p #bold {
+  color: #f7ff8d;
+  -webkit-filter: drop-shadow(0px 5px 10px #f7ff8d);
+          filter: drop-shadow(0px 5px 10px #f7ff8d);
+}
+
+body .language-graphs .graphContent {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+body .language-graphs .graphContent img {
+  width: 1400px;
 }
 
 #index {
