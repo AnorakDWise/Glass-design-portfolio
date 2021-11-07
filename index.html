@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">  
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
 
     <!--Nunito font from Google fonts:-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +15,9 @@
       rel="stylesheet"
     />
 
+    <!--AOS - github-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +25,13 @@
     <title>Home screen</title>
   </head>
   <body id="index">
-    <nav class="nav-container">
+    <nav
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
+      data-aos-easing="ease"
+      class="nav-container"
+    >
       <img src="./assets/pics/Gregy.webp" />
       <ul>
         <li id="selected"><a href="./index.html">Home</a></li>
@@ -28,7 +41,13 @@
       </ul>
     </nav>
 
-    <section class="intro container">
+    <section
+      data-aos="flip-up"
+      data-aos-duration="1000"
+      data-aos-delay="250"
+      data-aos-easing="ease"
+      class="intro container"
+    >
       <div class="hello">
         <h1>
           <span id="light">Hi! I'm </span
@@ -43,26 +62,44 @@
       <img src="./assets/pics/Hi!.webp" />
     </section>
 
-    <section class="social-icons container">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-delay="1000"
+      data-aos-easing="ease"
+      class="social-icons container"
+    >
       <a href="#" title="e-mail">
         <div class="icon">
           <img src="./assets/icons/email.png" />
         </div>
       </a>
 
-      <a href="https://www.facebook.com/profile.php?id=100009208417974" target="_blank" title="Facebook">
+      <a
+        href="https://www.facebook.com/profile.php?id=100009208417974"
+        target="_blank"
+        title="Facebook"
+      >
         <div class="icon">
           <img src="./assets/icons/facebook.svg" />
         </div>
       </a>
 
-      <a href="https://www.instagram.com/gregory.buffard/" target="_blank" title="Instagram">
+      <a
+        href="https://www.instagram.com/gregory.buffard/"
+        target="_blank"
+        title="Instagram"
+      >
         <div class="icon">
           <img src="./assets/icons/instagram.svg" />
         </div>
       </a>
 
-      <a href="https://www.linkedin.com/in/gr%C3%A9gory-wilhelm-stehl%C3%ADk-buffard-bb9767205/" target="_blank" title="LinkedIn">
+      <a
+        href="https://www.linkedin.com/in/gr%C3%A9gory-wilhelm-stehl%C3%ADk-buffard-bb9767205/"
+        target="_blank"
+        title="LinkedIn"
+      >
         <div class="icon">
           <img src="./assets/icons/linkedin.svg" />
         </div>
@@ -79,6 +116,11 @@
         max: 5,
         speed: 5000,
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

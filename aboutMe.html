@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
 
+    <!--AOS - github-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +25,14 @@
     <title>About Me</title>
   </head>
   <body id="aboutMe">
-    <nav class="nav-container">
+    <nav
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      data-aos-delay="250"
+      data-aos-easing="ease"
+      class="nav-container"
+      class="nav-container"
+    >
       <img src="./assets/pics/Gregy.webp" />
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -32,7 +42,13 @@
       </ul>
     </nav>
 
-    <section class="Me container">
+    <section
+      data-aos="slide-left"
+      data-aos-duration="1000"
+      data-aos-delay="250"
+      data-aos-easing="ease"
+      class="Me container"
+    >
       <h1 class="container" id="aboutMeTitle">
         <span id="black">Something</span> about me...
       </h1>
@@ -51,7 +67,13 @@
       </div>
     </section>
 
-    <section class="language-graphs container">
+    <section
+      data-aos="slide-right"
+      data-aos-duration="1000"
+      data-aos-delay="750"
+      data-aos-easing="ease"
+      class="language-graphs container"
+    >
       <div class="graphsText">
         <div class="graphsTitle">
           <h1>¡Hola! Hi! <span id="black">Salut!</span> Ahoj!</h1>
@@ -73,7 +95,12 @@
       </div>
     </section>
 
-    <section class="personalTitle container">
+    <section
+      data-aos="slide-down"
+      data-aos-duration="1000"
+      data-aos-easing="ease"
+      class="personalTitle container"
+    >
       <div class="personalH1">
         <h1>
           What do I do in my personal life?<br /><span id="black"
@@ -84,27 +111,75 @@
     </section>
 
     <section class="hobbies container">
-      <div class="hobbyCard">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        class="hobbyCard"
+      >
         <h1>Gaming</h1>
-        <img src="./assets/pics/controller.svg">
-        <p>Do you like Gaming? I do and very much. I'm playing a lot of games on my PC, for example <span id="bold">Counter-Strike: Global Offensive</span>, <span id="bold">Grand Theft Auto V</span> or a classic one like <span id="bold">Minecraft</span>.</p>
+        <img src="./assets/pics/controller.svg" />
+        <p>
+          Do you like Gaming? I do and very much. I'm playing a lot of games on
+          my PC, for example
+          <span id="bold">Counter-Strike: Global Offensive</span>,
+          <span id="bold">Grand Theft Auto V</span> or a classic one like
+          <span id="bold">Minecraft</span>.
+        </p>
       </div>
 
-      <div class="hobbyCard">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        data-aos-delay="500"
+        class="hobbyCard"
+      >
         <h1>Video Editing</h1>
-        <img src="./assets/pics/camera.svg">
-        <p>Lights, camera and action! Since I was very young, I've been trying video editing and as the time passes I achieved to learn it by myself and it's a hobby where I can relax.<br> <span id="black">(I mean casual editing, not AAA movies.)</span></p>
+        <img src="./assets/pics/camera.svg" />
+        <p>
+          Lights, camera and action! Since I was very young, I've been trying
+          video editing and as the time passes I achieved to learn it by myself
+          and it's a hobby where I can relax.<br />
+          <span id="black">(I mean casual editing, not AAA movies.)</span>
+        </p>
       </div>
 
-      <div class="hobbyCard">
+      <div
+        data-aos="slide-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease"
+        data-aos-delay="750"
+        class="hobbyCard"
+      >
         <h1>Machine Learning</h1>
-        <img src="./assets/pics/AI.svg">
-        <p><span id="black">Don't get me wrong, but...</span><br><span id="bold">I LOVE Machine Learning</span>.<br>I find this subject fascinating and incredibly interesting. So because of that, I'm trying to learn new things and knowledge about Machine Learning and its field.</p>
+        <img src="./assets/pics/AI.svg" />
+        <p>
+          <span id="black">Don't get me wrong, but...</span><br /><span
+            id="bold"
+            >I LOVE Machine Learning</span
+          >.<br />I find this subject fascinating and incredibly interesting. So
+          because of that, I'm trying to learn new things and knowledge about
+          Machine Learning and its field.
+        </p>
       </div>
     </section>
 
     <footer>
       <p>&copy;Grégory Wilhelm Stehlík Buffard, All right reserved.</p>
     </footer>
+
+    <script type="text/javascript" src="./vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".hobbyCard"), {
+        max: 5,
+        speed: 5000,
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
