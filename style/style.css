@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
 body {
   background-size: cover;
   background-attachment: fixed;
@@ -6,6 +16,8 @@ body {
   font-size: 3vh;
   max-width: 100%;
   overflow-x: hidden;
+  cursor: default;
+  overflow: overlay;
 }
 
 body h1 {
