@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.785" y1="-0.237" x2="0.54" y2="0.859" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8ef87"/>
+      <stop offset="1" stop-color="#fe5c52"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.945" y1="-0.033" x2="0" y2="0.914" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe5c52"/>
+      <stop offset="1" stop-color="#f8ef87"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient-2"/>
+    <clipPath id="clip-myWork_background">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="myWork_background" data-name="myWork background" clip-path="url(#clip-myWork_background)">
+    <rect width="1920" height="1080" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="400.5" cy="400.5" r="400.5" transform="translate(383 220)" fill="url(#linear-gradient-2)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="242" cy="242" r="242" transform="translate(257.911 868.771) rotate(-138)" fill="url(#linear-gradient-3)"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="93.5" cy="93.5" r="93.5" transform="translate(1938.636 23.429) rotate(103)" fill="url(#linear-gradient-3)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="120.5" cy="120.5" r="120.5" transform="matrix(-0.407, 0.914, -0.914, -0.407, 1062.594, -19.57)" fill="url(#linear-gradient-3)"/>
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="286" cy="286" r="286" transform="matrix(0.017, -1, 1, 0.017, 669.052, 1343.965)" fill="url(#linear-gradient-3)"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="258" cy="258" r="258" transform="translate(1996.149 841.765) rotate(177)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

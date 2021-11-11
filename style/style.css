@@ -536,4 +536,8 @@ body .hobbies .hobbyCard p #black {
   width: -moz-max-content;
   width: max-content;
 }
+
+#myWork {
+  background-image: url("../assets/pics/myWork background.svg");
+}
 /*# sourceMappingURL=style.css.map */
