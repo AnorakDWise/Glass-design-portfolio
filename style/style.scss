@@ -129,7 +129,7 @@ body {
           transition: 0.25s;
           padding: 5px 20px;
           border-radius: 30px;
-          filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 15px #00000040);
 
           &:hover {
             background-color: $blk-drk;
@@ -249,7 +249,6 @@ body {
   footer {
     display: flex;
     justify-content: center;
-
 
     p {
       position: absolute;
@@ -374,7 +373,7 @@ body {
 
     .personalH1 {
       padding: 30px 40px;
-      
+
       h1 {
         font-weight: $bld;
         margin: 0;
@@ -429,6 +428,74 @@ body {
       }
     }
   }
+
+  .myWorkTitle {
+    padding: 30px 40px;
+    @include glass-frosted();
+    border-radius: 40px;
+    margin-top: 40px;
+    width: max-content;
+
+    h1 {
+      font-weight: $bld;
+      filter: drop-shadow(0px 5px 10px $pastel-red);
+      text-align: center;
+      margin: 0px 40px;
+    }
+  }
+
+  .myWorkCards {
+    .myWorkCard {
+      border-radius: 40px;
+      padding: 30px 40px;
+      @include glass-frosted();
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        &:hover {
+          .myWorkFolder {
+            background-image: url("../assets/icons/folderYlw.svg");
+            filter: drop-shadow(0px 5px 10px $pastel-ylw);
+            transition: 0.25s;
+          }
+
+          p {
+            color: $dflt;
+            transition: 0.25s;
+          }
+        }
+
+        .myWorkFolder {
+          background-image: url("../assets/icons/folder.svg");
+          background-size: cover;
+          width: 200px;
+          height: 200px;
+          filter: drop-shadow(0px 5px 10px #00000040);
+          transition: 0.25s;
+        }
+
+        p {
+          font-weight: $reg;
+          color: $pastel-red;
+          filter: drop-shadow(0px 5px 10px $pastel-red);
+          margin: 0px;
+          margin-top: 30px;
+          transition: 0.25s;
+        }
+      }
+    }
+  }
 }
 
 #index {
@@ -455,5 +522,5 @@ body {
 }
 
 #myWork {
-  background-image: url("../assets/pics/myWork\ background.svg")
+  background-image: url("../assets/pics/myWork\ background.svg");
 }
