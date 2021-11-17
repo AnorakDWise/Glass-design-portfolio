@@ -496,6 +496,16 @@ body {
       }
     }
   }
+
+  .formSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 500px;
+    }
+  }
 }
 
 #index {
@@ -519,6 +529,10 @@ body {
       width: max-content;
     }
   }
+}
+
+#formHandler {
+  background-image: url("../assets/pics/myWork\ background.svg"); //Create and change the formHandler.html background image//
 }
 
 #myWork {

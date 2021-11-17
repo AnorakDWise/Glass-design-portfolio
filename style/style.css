@@ -614,6 +614,22 @@ body .myWorkCards .myWorkCard a p {
   transition: 0.25s;
 }
 
+body .formSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .formSection img {
+  width: 500px;
+}
+
 #index {
   background-image: url("../assets/pics/index background (beta).svg");
 }
@@ -637,6 +653,10 @@ body .myWorkCards .myWorkCard a p {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+#formHandler {
+  background-image: url("../assets/pics/myWork background.svg");
 }
 
 #myWork {
