@@ -434,6 +434,7 @@ body {
     @include glass-frosted();
     border-radius: 40px;
     margin-top: 40px;
+    margin-bottom: 20px;
     width: max-content;
 
     h1 {
@@ -445,11 +446,14 @@ body {
   }
 
   .myWorkCards {
+    display: flex;
+    justify-content: space-around;
+
     .myWorkCard {
       border-radius: 40px;
       padding: 30px 40px;
       @include glass-frosted();
-      width: max-content;
+      width: 320px;
       display: flex;
       flex-direction: column;
       align-items: center;
