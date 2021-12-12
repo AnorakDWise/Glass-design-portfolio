@@ -32,7 +32,7 @@
       data-aos-easing="ease"
       class="nav-container"
     >
-      <img src="./assets/pics/Gregy.webp" />
+      <!--<img src="./assets/pics/Gregy.webp" />-->
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./aboutMe.html">About me</a></li>
@@ -52,68 +52,72 @@
     </div>
 
     <section class="formSection container">
-        <img src="./assets/pics/message.svg">
+      <img src="./assets/pics/message.svg" />
 
-        <form method="POST" action="./fromHandler.php">
-            <div class="form container">
-                <div class="name">
-                  <label for="jmeno">Your name:</label><br />
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="First name and last name" required
-                  />
-                </div>
-        
-                <div class="e-mail">
-                  <label for="email">Your e-mail address:</label><br />
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="your@email.com" required
-                  />
-                </div>
-        
-                <div class="subject">
-                  <label for="predmet">Message subject:</label><br />
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Any subject" required
-                  />
-                </div>
-        
-                <div class="message">
-                  <label for="message">Your message:</label><br />
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Hello, ..." required
-                  ></textarea>
-                </div>
-        
-                <div class="submit-reset">
-                  <input
-                    class="Submit"
-                    type="submit"
-                    id="submit"
-                    name="submit"
-                    value="Submit"
-                  />
-        
-                  <input
-                    class="Reset"
-                    type="reset"
-                    id="clear"
-                    name="clear"
-                    value="Clear"
-                  />
-                </div>
-              </div>
-        </form>
+      <form method="POST" action="./fromHandler.php">
+        <div class="form container">
+          <div class="name">
+            <label for="jmeno">Your name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First name and last name"
+              required
+            />
+          </div>
+
+          <div class="e-mail">
+            <label for="email">Your e-mail address:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+
+          <div class="subject">
+            <label for="predmet">Message subject:</label><br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Any subject"
+              required
+            />
+          </div>
+
+          <div class="message">
+            <label for="message">Your message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Hello, ..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="submit-reset">
+            <input
+              class="Submit"
+              type="submit"
+              id="submit"
+              name="submit"
+              value="Submit"
+            />
+
+            <input
+              class="Reset"
+              type="reset"
+              id="clear"
+              name="clear"
+              value="Clear"
+            />
+          </div>
+        </div>
+      </form>
     </section>
 
     <script type="text/javascript" src="./vanilla-tilt.js"></script>

@@ -80,15 +80,14 @@ body {
 
   .nav-container {
     margin: auto;
-    width: 1400px;
+    width: 985px;
   }
 
   nav {
     @include glass-light;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 1400px;
     height: 90px;
     border-radius: 25px;
     position: relative;
@@ -103,6 +102,7 @@ body {
     }
 
     ul {
+      padding: 0;
       display: flex;
       list-style: none;
 
