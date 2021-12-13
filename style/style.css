@@ -57,6 +57,11 @@ body .container {
   width: 1500px;
 }
 
+body .form-container {
+  margin: auto;
+  width: 1500px;
+}
+
 body .nav-container {
   margin: auto;
   width: 985px;
@@ -92,6 +97,7 @@ body nav img {
 }
 
 body nav ul {
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,8 +525,8 @@ body .myWorkTitle {
           backdrop-filter: blur(50px);
   -webkit-filter: drop-shadow(0px 0px 15px #505050);
           filter: drop-shadow(0px 0px 15px #505050);
-  border-radius: 40px;
   margin-top: 40px;
+  border-radius: 40px;
   margin-bottom: 20px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -621,20 +627,293 @@ body .myWorkCards .myWorkCard a p {
   transition: 0.25s;
 }
 
+body .glassPlate {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-filter: drop-shadow(0px 0px 15px #505050);
+          filter: drop-shadow(0px 0px 15px #505050);
+  border-radius: 40px;
+}
+
+body .glassPlate .myWorkTitle {
+  background-color: initial;
+  -webkit-backdrop-filter: initial;
+          backdrop-filter: initial;
+  -webkit-filter: initial;
+          filter: initial;
+  padding: 30px 0 0 0;
+}
+
 body .formSection {
+  width: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
 }
 
 body .formSection img {
   width: 500px;
+}
+
+body .formSection form {
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-filter: drop-shadow(0px 0px 15px #505050);
+          filter: drop-shadow(0px 0px 15px #505050);
+  padding: 30px 40px;
+  border-radius: 40px;
+}
+
+body .formSection form div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body .formSection form div label {
+  color: #923030;
+  font-weight: 400;
+  padding-left: 20px;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+}
+
+body .formSection form div input {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  border: none;
+  padding: 0 20px;
+  background-color: #292929;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  caret-color: #c9cf76;
+  color: #f7ff8d;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  -webkit-filter: drop-shadow(0px 0px 15px #00000040);
+          filter: drop-shadow(0px 0px 15px #00000040);
+}
+
+body .formSection form div input::-webkit-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div input:-ms-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div input::-ms-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div input::placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div input:hover {
+  background-color: #383838;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+}
+
+body .formSection form div input:focus {
+  background-color: #383838;
+  outline: none;
+  -webkit-filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+}
+
+body .formSection form div textarea {
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #292929;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  resize: none;
+  cursor: pointer;
+  color: #f7ff8d;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 2vh;
+  margin-bottom: 30px;
+  -webkit-filter: drop-shadow(0px 0px 15px #00000040);
+          filter: drop-shadow(0px 0px 15px #00000040);
+}
+
+body .formSection form div textarea::-webkit-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div textarea:-ms-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div textarea::-ms-input-placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div textarea::placeholder {
+  color: #808080;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+body .formSection form div textarea:hover {
+  background-color: #383838;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+}
+
+body .formSection form div textarea:focus {
+  background-color: #383838;
+  outline: none;
+  -webkit-filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+}
+
+body .formSection form div .submit-reset input {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  padding: 5px 20px;
+  font-size: 3vh;
+  background-color: #292929;
+}
+
+body .formSection form div .submit-reset input:hover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+body .formSection form div .submit-reset .Submit {
+  color: #f7ff8d;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+body .formSection form div .submit-reset .Submit:hover {
+  color: #383838;
+  background-color: #f7ff8d;
+  -webkit-filter: drop-shadow(0px 0px 25px #f7ff8d);
+          filter: drop-shadow(0px 0px 25px #f7ff8d);
+}
+
+body .formSection form div .submit-reset .Reset {
+  font-weight: 300;
+  color: #ff4d4d;
+}
+
+body .formSection form div .submit-reset .Reset:hover {
+  color: #383838;
+  background-color: #ff4d4d;
+  -webkit-filter: drop-shadow(0px 0px 25px #c93d3d);
+          filter: drop-shadow(0px 0px 25px #c93d3d);
+}
+
+body .Notification {
+  margin: 0 auto;
+  width: 100vh;
+  border-radius: 80px;
+  height: 25vh;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  -webkit-filter: drop-shadow(0px 0px 15px #505050);
+          filter: drop-shadow(0px 0px 15px #505050);
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .Notification img {
+  width: 25vh;
+  -webkit-filter: drop-shadow(0px 5px 10px #f7ff8d);
+          filter: drop-shadow(0px 5px 10px #f7ff8d);
+}
+
+body .Notification .notificationText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .Notification .notificationText h1 {
+  font-size: 3.5vh;
+  font-weight: 700;
+  -webkit-filter: drop-shadow(0px 5px 10px #923030);
+          filter: drop-shadow(0px 5px 10px #923030);
+}
+
+body .Notification .notificationText .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .Notification .notificationText .button a {
+  color: white;
+  text-decoration: none;
+}
+
+body .Notification .notificationText .button img {
+  -webkit-filter: initial;
+          filter: initial;
+  width: 3vh;
 }
 
 #index {
@@ -664,6 +943,31 @@ body .formSection img {
 
 #formHandler {
   background-image: url("../assets/pics/myWork background.svg");
+}
+
+#formHandler footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#formHandler footer p {
+  margin: 20px 0 0 0;
+  position: absolute;
+  bottom: 15px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #923030;
+  font-size: 2vh;
+  font-weight: 300;
+  -webkit-filter: drop-shadow(0px 5px 5px #ff4d4d);
+          filter: drop-shadow(0px 5px 5px #ff4d4d);
 }
 
 #myWork {

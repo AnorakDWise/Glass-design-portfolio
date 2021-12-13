@@ -41,89 +41,104 @@
       </ul>
     </nav>
 
-    <div
-      data-aos="fade-down"
+    <section
+      class="glassPlate container"
+      data-aos="flip-up"
       data-aos-duration="1000"
       data-aos-delay="250"
       data-aos-easing="ease"
-      class="myWorkTitle container"
     >
-      <h1>Send me a message!</h1>
-    </div>
+      <div class="myWorkTitle container">
+        <h1>Send me a message!</h1>
+      </div>
 
-    <section class="formSection container">
-      <img src="./assets/pics/message.svg" />
+      <div class="formSection">
+        <img
+          src="./assets/pics/message.svg"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+          data-aos-easing="ease"
+        />
 
-      <form method="POST" action="./fromHandler.php">
-        <div class="form container">
-          <div class="name">
-            <label for="jmeno">Your name:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="First name and last name"
-              required
-            />
+        <form
+          method="POST"
+          action="./fromHandler.php"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="900"
+          data-aos-easing="ease"
+        >
+          <div class="form container">
+            <div class="name">
+              <label for="jmeno">Your name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First name and last name"
+                required
+              />
+            </div>
+
+            <div class="e-mail">
+              <label for="email">Your e-mail address:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div class="subject">
+              <label for="predmet">Message subject:</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Message subject"
+                required
+              />
+            </div>
+
+            <div class="message">
+              <label for="message">Your message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="submit-reset">
+              <input
+                class="Submit"
+                type="submit"
+                id="submit"
+                name="submit"
+                value="Send"
+              />
+
+              <input
+                class="Reset"
+                type="reset"
+                id="clear"
+                name="clear"
+                value="Erase message"
+              />
+            </div>
           </div>
-
-          <div class="e-mail">
-            <label for="email">Your e-mail address:</label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="your@email.com"
-              required
-            />
-          </div>
-
-          <div class="subject">
-            <label for="predmet">Message subject:</label><br />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Any subject"
-              required
-            />
-          </div>
-
-          <div class="message">
-            <label for="message">Your message:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Hello, ..."
-              required
-            ></textarea>
-          </div>
-
-          <div class="submit-reset">
-            <input
-              class="Submit"
-              type="submit"
-              id="submit"
-              name="submit"
-              value="Submit"
-            />
-
-            <input
-              class="Reset"
-              type="reset"
-              id="clear"
-              name="clear"
-              value="Clear"
-            />
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
 
     <script type="text/javascript" src="./vanilla-tilt.js"></script>
     <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll("element"), {
-        max: 5,
+      VanillaTilt.init(document.querySelectorAll("form"), {
+        max: 1,
         speed: 5000,
       });
     </script>
@@ -133,4 +148,7 @@
       AOS.init();
     </script>
   </body>
+  <footer>
+    <p>&copy;Grégory Wilhelm Stehlík Buffard, All right reserved.</p>
+  </footer>
 </html>

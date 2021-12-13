@@ -78,6 +78,11 @@ body {
     width: 1500px;
   }
 
+  .form-container {
+    margin: auto;
+    width: 1500px;
+  }
+
   .nav-container {
     margin: auto;
     width: 985px;
@@ -102,6 +107,7 @@ body {
     }
 
     ul {
+      margin: 0;
       padding: 0;
       display: flex;
       list-style: none;
@@ -432,8 +438,8 @@ body {
   .myWorkTitle {
     padding: 30px 40px;
     @include glass-frosted();
-    border-radius: 40px;
     margin-top: 40px;
+    border-radius: 40px;
     margin-bottom: 20px;
     width: max-content;
 
@@ -501,13 +507,198 @@ body {
     }
   }
 
+  .glassPlate {
+    @include glass-frosted();
+    border-radius: 40px;
+
+    .myWorkTitle {
+      background-color: initial;
+      backdrop-filter: initial;
+      filter: initial;
+      padding: 30px 0 0 0;
+    }
+  }
+
   .formSection {
+    width: 1500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-bottom: 30px;
 
     img {
       width: 500px;
+    }
+
+    form {
+      @include glass-light();
+      padding: 30px 40px;
+      border-radius: 40px;
+
+      div {
+        width: max-content;
+
+        label {
+          color: $dflt;
+          font-weight: $reg;
+          padding-left: 20px;
+          filter: drop-shadow(0px 5px 10px $pastel-red);
+        }
+
+        input {
+          width: 500px;
+          height: 40px;
+          margin-bottom: 30px;
+          border-radius: 50px;
+          border: none;
+          padding: 0 20px;
+          background-color: $blk-drk;
+          transition: 0.25s;
+          cursor: pointer;
+          caret-color: $ylw-drk;
+          color: $pastel-ylw;
+          font-family: $nunito;
+          font-weight: $lte;
+          font-size: 2vh;
+          filter: drop-shadow(0px 0px 15px #00000040);
+
+          &::placeholder {
+            color: #808080;
+            font-family: $nunito;
+            font-weight: $lte;
+          }
+
+          &:hover {
+            background-color: $pastel-blk;
+            transition: 0.25s;
+            filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          }
+
+          &:focus {
+            background-color: $pastel-blk;
+            outline: none;
+            filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          }
+        }
+
+        textarea {
+          width: 500px;
+          height: 100px;
+          border-radius: 20px;
+          padding: 10px 20px;
+          background-color: $blk-drk;
+          transition: 0.25s;
+          resize: none;
+          cursor: pointer;
+          color: $pastel-ylw;
+          font-family: $nunito;
+          font-weight: $lte;
+          font-size: 2vh;
+          margin-bottom: 30px;
+          filter: drop-shadow(0px 0px 15px #00000040);
+
+          &::placeholder {
+            color: #808080;
+            font-family: $nunito;
+            font-weight: $lte;
+          }
+
+          &:hover {
+            background-color: $pastel-blk;
+            transition: 0.25s;
+            filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          }
+
+          &:focus {
+            background-color: $pastel-blk;
+            outline: none;
+            filter: drop-shadow(0px 0px 25px rgba(56, 56, 56, 0.251));
+          }
+        }
+
+        .submit-reset {
+          input {
+            width: max-content;
+            height: max-content;
+            margin-bottom: 0;
+            transition: 0.25s;
+            padding: 5px 20px;
+            font-size: 3vh;
+            background-color: $blk-drk;
+
+            &:hover {
+              transition: 0.25s;
+            }
+          }
+
+          .Submit {
+            color: $pastel-ylw;
+            font-weight: $reg;
+            margin-right: 30px;
+
+            &:hover {
+              color: $pastel-blk;
+              background-color: $pastel-ylw;
+              filter: drop-shadow(0px 0px 25px $pastel-ylw);
+            }
+          }
+
+          .Reset {
+            font-weight: $lte;
+            color: $pastel-red;
+
+            &:hover {
+              color: $pastel-blk;
+              background-color: $pastel-red;
+              filter: drop-shadow(0px 0px 25px $red-drk);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Notification {
+    margin: 0 auto;
+    width: 100vh;
+    border-radius: 80px;
+    height: 25vh;
+    @include glass-frosted();
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 25vh;
+      filter: drop-shadow(0px 5px 10px $pastel-ylw);
+    }
+
+    .notificationText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 3.5vh;
+        font-weight: $bld;
+        filter: drop-shadow(0px 5px 10px $dflt);
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        img {
+          filter: initial;
+          width: 3vh;
+        }
+      }
     }
   }
 }
@@ -537,6 +728,24 @@ body {
 
 #formHandler {
   background-image: url("../assets/pics/myWork\ background.svg"); //Create and change the formHandler.html background image//
+  footer {
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 20px 0 0 0;
+      position: absolute;
+      bottom: 15px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+      color: $dflt;
+      font-size: 2vh;
+      font-weight: $lte;
+      filter: drop-shadow(0px 5px 5px $pastel-red);
+    }
+  }
 }
 
 #myWork {
