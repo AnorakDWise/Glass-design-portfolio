@@ -903,14 +903,41 @@ body .Notification .notificationText .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ff4d4d;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2px 10px;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-filter: drop-shadow(0px 5px 10px #ff4d4d);
+          filter: drop-shadow(0px 5px 10px #ff4d4d);
+}
+
+body .Notification .notificationText .button:hover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background-color: #c93d3d;
 }
 
 body .Notification .notificationText .button a {
-  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #383838;
   text-decoration: none;
+  font-weight: 400;
 }
 
 body .Notification .notificationText .button img {
+  padding-left: 10px;
   -webkit-filter: initial;
           filter: initial;
   width: 3vh;
